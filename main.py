@@ -13,9 +13,9 @@ DATASET = "mi_dataset"
 def home():
     return jsonify({
         "servicio": "github-insights-api",
+        "version": "1.1",
         "endpoints": ["/top-lenguajes", "/top-repos", "/lenguajes-en-top-repos"],
     })
-
 
 @app.route("/top-lenguajes")
 def top_lenguajes():
